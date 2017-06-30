@@ -59,4 +59,5 @@ bintray {
     }
 }
 
-release.dependsOn bintrayUpload
+release.dependsOn(bintrayUpload)
+
