@@ -33,6 +33,15 @@ dependencies {
     testCompile group: 'org.apache.camel', name: 'camel-test', version: camelVersion
 }
 
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
 publishing {
     publications {
         MainPublication(MavenPublication) {
