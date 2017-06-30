@@ -59,3 +59,4 @@ bintray {
     }
 }
 
+release.dependsOn bintrayUpload
