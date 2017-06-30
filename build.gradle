@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+}
+
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+
+def camelVersion = '2.19.+'
+
+
+dependencies {
+    compile group: 'org.apache.camel', name: 'camel-core', version: camelVersion
+    compile group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.6.RELEASE'
+
+    testCompile 'junit:junit:4.12'
+    testCompile group: 'org.apache.camel', name: 'camel-test', version: camelVersion
+}
+
