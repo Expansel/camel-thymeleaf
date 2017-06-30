@@ -5,9 +5,9 @@ buildscript {
 }
 
 plugins {
+  id 'net.researchgate.release' version '2.4.0'
 }
 
-// Apply the java plugin to add support for Java
 apply plugin: 'java'
 
 sourceCompatibility = '1.8'
