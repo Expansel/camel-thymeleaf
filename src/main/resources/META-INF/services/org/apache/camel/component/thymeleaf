@@ -1,1 +1,1 @@
-class=com.expansel.server.camel.thymeleaf.ThymeleafComponent
+class=com.expansel.camel.thymeleaf.ThymeleafComponent

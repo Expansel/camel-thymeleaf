@@ -1,4 +1,4 @@
-package com.expansel.server.camel.thymeleaf;
+package com.expansel.camel.thymeleaf;
 
 public class ThymeleafConstants {
     public static final String THYMELEAF_RESOURCE_URI = "CamelThymeleafResourceUri";

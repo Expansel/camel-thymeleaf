@@ -1,4 +1,4 @@
-package com.expansel.server.camel.thymeleaf;
+package com.expansel.camel.thymeleaf;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package com.expansel.server.camel.thymeleaf;
+package com.expansel.camel.thymeleaf;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -46,8 +46,7 @@ public class ThymeleafConcurrentTest extends CamelTestSupport {
         return new RouteBuilder() {
             @Override
             public void configure() {
-                from("direct:start").to("thymeleaf:com/expansel/server/camel/thymeleaf/concurrent.xhtml")
-                        .to("mock:result");
+                from("direct:start").to("thymeleaf:com/expansel/camel/thymeleaf/concurrent.xhtml").to("mock:result");
             }
         };
     }

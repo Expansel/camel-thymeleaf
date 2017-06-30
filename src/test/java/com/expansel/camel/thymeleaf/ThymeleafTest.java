@@ -1,4 +1,4 @@
-package com.expansel.server.camel.thymeleaf;
+package com.expansel.camel.thymeleaf;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +37,7 @@ public class ThymeleafTest extends CamelTestSupport {
         // is processing template
         assertEquals("<h1>Some header</h1><p>Some text</p><p>Some property</p>", response.getOut().getBody());
         // template is expected resource
-        assertEquals("com/expansel/server/camel/thymeleaf/template.xhtml",
+        assertEquals("com/expansel/camel/thymeleaf/template.xhtml",
                 response.getOut().getHeader(ThymeleafConstants.THYMELEAF_RESOURCE_URI));
     }
 
@@ -72,7 +72,7 @@ public class ThymeleafTest extends CamelTestSupport {
         return new RouteBuilder() {
             @Override
             public void configure() {
-                from("direct:a").to("thymeleaf:com/expansel/server/camel/thymeleaf/template.xhtml");
+                from("direct:a").to("thymeleaf:com/expansel/camel/thymeleaf/template.xhtml");
             }
         };
     }
