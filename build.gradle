@@ -60,6 +60,7 @@ bintray {
     dryRun = false
     publish = true
     pkg {
+        userOrg = 'expansel'
         repo = 'maven'
         name = 'camel-thymeleaf'
         version {
