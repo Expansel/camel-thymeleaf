@@ -22,7 +22,7 @@ repositories {
 }
 
 
-def camelVersion = '2.19.+'
+def camelVersion = '2.19.1'
 
 
 dependencies {
